@@ -11,6 +11,6 @@ const fruits: readonly string[] = ["Apple"];
 // TypeScript can infer the type of an array if it has values.
 const numbers: number[] = [1, 2, 3];
 numbers.push(4);
-numbers.push("5"); // 'string' is not assignable to a 'number' array
+// numbers.push("5"); // 'string' is not assignable to a 'number' array
 
 console.log(numbers);
