@@ -29,11 +29,11 @@ const car: TCar = {
   year: 2020,
 };
 
-// Interfaces: Define a contract for object shapes, which can be implemented or extended.
+// Interfaces, readonly & optional properties: Define a contract for object shapes, which can be implemented or extended.
 interface ICar {
   type: string;
   model: string;
-  year: number;
+  year?: number;
 }
 
 const car2: ICar = {
@@ -47,3 +47,21 @@ const car2: ICar = {
 const person: { [index: string]: number | string } = {};
 person.id = 101;
 person.name = "Mofiz";
+
+// Intersection Types
+// Combine multiple types into one using intersection types, which merge properties from multiple types.
+
+interface dsa {
+  hasDSAKnowledge: boolean;
+}
+
+interface programming {
+  hasProgrammingKnowledge: boolean;
+}
+
+type TProgrammer = dsa & programming;
+
+const rakib: TProgrammer = {
+  hasDSAKnowledge: true,
+  hasProgrammingKnowledge: true,
+};

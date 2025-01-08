@@ -25,3 +25,7 @@ const car2 = {
 const person = {};
 person.id = 101;
 person.name = "Mofiz";
+const rakib = {
+    hasDSAKnowledge: true,
+    hasProgrammingKnowledge: true,
+};
