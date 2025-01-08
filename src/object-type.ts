@@ -29,6 +29,19 @@ const car: TCar = {
   year: 2020,
 };
 
+// Interfaces: Define a contract for object shapes, which can be implemented or extended.
+interface ICar {
+  type: string;
+  model: string;
+  year: number;
+}
+
+const car2: ICar = {
+  type: "Honda",
+  model: "R15",
+  year: 2018,
+};
+
 // Index Signatures
 // Index signatures can be used for objects without a defined list of properties.
 const person: { [index: string]: number | string } = {};
