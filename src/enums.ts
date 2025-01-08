@@ -8,4 +8,30 @@ enum Direction {
   west,
 }
 
+// You can specify the starting value explicitly:
+enum ststusCode {
+  success = 200,
+  created = 201,
+  badRequest = 400,
+  notFound = 404,
+  serverError = 500,
+}
+
 console.log(Direction.north, Direction.south, Direction.east, Direction.west);
+console.log(ststusCode.notFound);
+
+// 2. String Enums
+
+enum userRoles {
+  user = "USER",
+  admin = "ADMIN",
+  moderator = "MODERATOR",
+}
+console.log(userRoles.admin);
+
+// 3. Heterogeneous Enums
+enum contactInfo {
+  phone = 1792063488,
+  email = "hrmrakibs@gmail.com",
+}
+console.log(contactInfo.email);
