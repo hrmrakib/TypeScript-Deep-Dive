@@ -25,3 +25,10 @@ const car1 = {
     },
 };
 car1.move();
+// type Dog = Animal & {
+//   breed: string;
+// };
+const tom = {
+    name: "Tom",
+    breed: "Ruti",
+};

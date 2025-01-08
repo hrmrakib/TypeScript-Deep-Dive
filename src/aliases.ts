@@ -1,3 +1,4 @@
+// 1. Type Aliases
 // Union Types: You can combine multiple types using union (|).
 type ID = string | number;
 let userID: ID = "100103";
@@ -33,7 +34,7 @@ const move: TOps = {
 let x = move.define(3, 5);
 console.log(x);
 
-// Interfaces
+// 2. Interfaces
 interface ICar {
   type: string;
   model: string;
@@ -49,3 +50,21 @@ const car1: ICar = {
 };
 
 car1.move();
+
+// 3. Extending Types and Interfaces
+interface Animal {
+  name: string;
+}
+
+interface Dog extends Animal {
+  breed: string;
+}
+
+// type Dog = Animal & {
+//   breed: string;
+// };
+
+const tom: Dog = {
+  name: "Tom",
+  breed: "Ruti",
+};
