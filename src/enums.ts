@@ -2,7 +2,7 @@
 // By default, enums are numeric, starting at 0 and incrementing by 1 for each member.
 
 enum Direction {
-  north,
+  north = 101,
   south,
   east,
   west,
@@ -35,3 +35,12 @@ enum contactInfo {
   email = "hrmrakibs@gmail.com",
 }
 console.log(contactInfo.email);
+
+// Computed and Constant Members
+enum product {
+  phonePrice = 1200,
+  chargerPrice = 150,
+  totalPrice = phonePrice + chargerPrice,
+  phoneName = "iPhone 15".length,
+}
+console.log(product.phoneName);

@@ -3,10 +3,10 @@
 // By default, enums are numeric, starting at 0 and incrementing by 1 for each member.
 var Direction;
 (function (Direction) {
-    Direction[Direction["north"] = 0] = "north";
-    Direction[Direction["south"] = 1] = "south";
-    Direction[Direction["east"] = 2] = "east";
-    Direction[Direction["west"] = 3] = "west";
+    Direction[Direction["north"] = 101] = "north";
+    Direction[Direction["south"] = 102] = "south";
+    Direction[Direction["east"] = 103] = "east";
+    Direction[Direction["west"] = 104] = "west";
 })(Direction || (Direction = {}));
 // You can specify the starting value explicitly:
 var ststusCode;
@@ -34,3 +34,12 @@ var contactInfo;
     contactInfo["email"] = "hrmrakibs@gmail.com";
 })(contactInfo || (contactInfo = {}));
 console.log(contactInfo.email);
+// Computed and Constant Members
+var product;
+(function (product) {
+    product[product["phonePrice"] = 1200] = "phonePrice";
+    product[product["chargerPrice"] = 150] = "chargerPrice";
+    product[product["totalPrice"] = 1350] = "totalPrice";
+    product[product["phoneName"] = "iPhone 15".length] = "phoneName";
+})(product || (product = {}));
+console.log(product.phoneName);
