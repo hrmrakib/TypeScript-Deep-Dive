@@ -9,3 +9,8 @@ const point = (n) => {
     return n * n;
 };
 console.log(point(3));
+// Rest Parameter
+function sum(...numbers) {
+    return numbers.reduce((prev, cur) => prev + cur);
+}
+console.log(sum(1, 2, 3, 4, 5));

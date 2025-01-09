@@ -11,3 +11,9 @@ const point = (n: number): number => {
 };
 
 console.log(point(3));
+
+// Rest Parameter
+function sum(...numbers: number[]): number {
+  return numbers.reduce((prev, cur) => prev + cur);
+}
+console.log(sum(1, 2, 3, 4, 5));
