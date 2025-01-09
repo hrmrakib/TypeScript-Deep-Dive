@@ -1,12 +1,21 @@
-function func(a: number, b: number) {
-  console.log(a + b);
+enum Namaz {
+  fajor = "Fojor",
+  zohor = "Zohor",
+  zsor = "Asor",
+  magrib = "Magrib",
+  asha = "Asha",
 }
 
-func(10, 15);
+console.log(Namaz.asha);
 
-/**
- * npm i -g typescript
- * npm init -y
- * tsc --init
- * tyconfig.json (modify necessary rules)
- */
+enum increment {
+  a = 1000,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  h,
+}
+console.log(increment.g);

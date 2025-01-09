@@ -20,3 +20,14 @@ const arr: (string | number)[] = [23, "Frog"];
 arr.push(100, "hello");
 // arr.push(null); // 'null' is not assignable to paramter of type (string | number)
 console.log(arr);
+
+// 4. Union Types with Objects
+interface TObj {
+  name: string;
+  age: string | number;
+}
+
+const baby: TObj = {
+  name: "Oysaim",
+  age: "1.5",
+};

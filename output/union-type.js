@@ -19,3 +19,7 @@ const arr = [23, "Frog"];
 arr.push(100, "hello");
 // arr.push(null); // 'null' is not assignable to paramter of type (string | number)
 console.log(arr);
+const baby = {
+    name: "Oysaim",
+    age: "1.5",
+};

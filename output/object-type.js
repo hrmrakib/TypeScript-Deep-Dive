@@ -15,11 +15,11 @@ const car = {
     model: "BMW",
     year: 2020,
 };
-const car2 = {
-    type: "Honda",
-    model: "R15",
-    year: 2018,
-};
+// const car22: ICar = {
+//   type: "Honda",
+//   model: "R15",
+//   year: 2018,
+// };
 // Index Signatures
 // Index signatures can be used for objects without a defined list of properties.
 const person = {};

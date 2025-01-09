@@ -15,7 +15,7 @@ console.log(animal);
 // Type: never
 /* never effectively throws an error whenever it is defined. */
 let opps: never;
-console.log(opps);
+// console.log(opps);
 
 // Type: undefined & null
 /* undefined and null are types that refer to the JavaScript primitives undefined and null respectively. */
