@@ -13,3 +13,15 @@ type TGenericsType<T> = Array<T>;
 const strArr: TGenericsType<string> = ["React", "Next", "Node"];
 const numArr: TGenericsType<number> = [12, 34, 54, 66];
 const isHappy: TGenericsType<boolean> = [false, true, true];
+// console.log(strArr, numArr, isHappy);
+
+const users: TGenericsType<{ name: string; age: number }> = [
+  {
+    name: "Faysal",
+    age: 24,
+  },
+  {
+    name: "Tanvir",
+    age: 27,
+  },
+];
